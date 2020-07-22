@@ -7,11 +7,11 @@
 
 ### Description
 
-1. Insert your model in project.
+1. Insert file your model in project.
 2. Change your model : file camera.py line 33 -> demo_clf = load('ann-age-gender-v1.ml')  # Your model for detect your face.
 
 ### Credits
-Most of the code credits to Miguel Grinberg, except that I made a small tweak. Thanks!
+credits to Miguel Grinberg for video-streaming-with-flask. 
 http://blog.miguelgrinberg.com/post/video-streaming-with-flask
 
 ### Usage
