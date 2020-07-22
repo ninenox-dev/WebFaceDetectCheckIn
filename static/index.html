@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>เว็บตรวจจับใบหน้าด้วย Machine Learning</title>
+  </head>
+  <body>
+    <h1>เว็บตรวจจับใบหน้าด้วย Machine Learning</h1>
+    <img id="bg" src="{{ url_for('video_feed') }}" width="350px" height="200px">
+  <br>
+    <div ng-app="app" ng-controller="mainCtrl">
+        <p>{{data|safe}}</p>
+    </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script>
+      (function(){
+	var app = angular.module("app", []);
+
+	var mainCtrl = function($scope,$http){
+
+    $http({
+    url: "http://127.0.0.1:5000/getcheckin",
+    method: "GET",
+    params: {user_id: "test"}
+    }).success(function(data) {
+      console.log(data)
+        $scope.foo = data;
+    });
+ }
+
+  app.controller("mainCtrl", mainCtrl);
+}());
+  </script>
+
+  </body>
+</html>

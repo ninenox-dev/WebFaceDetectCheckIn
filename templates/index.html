@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>วิดิโอ Machine Learning</title>
+  </head>
+  <body>
+    <h1>วิดิโอ Machine Learning</h1>
+    <img id="bg" src="{{ url_for('video_feed') }}" width="350px" height="200px">
+  <br>
+    <div ng-app="app" ng-controller="mainCtrl">
+        <p>{{data|safe}}</p>
+
+        {% raw %}
+
+  <p>{{countdown}}</p>
+        {% endraw %}
+    </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="static/app.js"></script>
+
+  </body>
+</html>
