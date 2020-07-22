@@ -1,13 +1,17 @@
-## Video Streaming with Flask Example
 
-### Website
-http://www.chioka.in
+## Web Flask Face Detection Checkin.
+
+
+![Alt Text](https://i.ibb.co/swWT9y8/Screen-Shot-2563-07-22-at-12-11-52.png)
+
 
 ### Description
-Modified to support streaming out with webcams, and not just raw JPEGs.
+
+1. Insert file your model in project.
+2. Change your model : file camera.py line 33 -> demo_clf = load('ann-age-gender-v1.ml')  # Your model for detect your face.
 
 ### Credits
-Most of the code credits to Miguel Grinberg, except that I made a small tweak. Thanks!
+credits to Miguel Grinberg for video-streaming-with-flask. 
 http://blog.miguelgrinberg.com/post/video-streaming-with-flask
 
 ### Usage
