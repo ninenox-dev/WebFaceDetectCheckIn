@@ -9,12 +9,13 @@
 
 1. Insert file your model in project.
 2. Change your model : file camera.py line 33 -> demo_clf = load('ann-age-gender-v1.ml')  # Your model for detect your face.
+3. Install Python dependencies: cv2, flask. (follow your error.)
+4. Run "python main.py".
+5. open browser http://0.0.0.0:5000 
 
 ### Credits
 credits to Miguel Grinberg for video-streaming-with-flask. 
 http://blog.miguelgrinberg.com/post/video-streaming-with-flask
 
-### Usage
-1. Install Python dependencies: cv2, flask. (wish that pip install works like a charm)
-2. Run "python main.py".
-3. Navigate the browser to the local webpage.
+
+
