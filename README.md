@@ -7,8 +7,8 @@
 
 ### Description
 
-1. Insert file your model in project.
-2. Change your model : file camera.py line 33 -> demo_clf = load('ann-age-gender-v1.ml')  # Your model for detect your face.
+1. Insert your file model in folder project.
+2. go to file camera.py line 33 -> demo_clf = load('ann-age-gender-v1.ml') # Change name 'ann-age-gender-v1.ml' ,This is your model for detect your face.
 3. Install Python dependencies: cv2, flask. (follow your error.)
 4. Run "python main.py".
 5. open browser http://0.0.0.0:5000 
